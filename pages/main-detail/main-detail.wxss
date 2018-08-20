@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-right: 70rpx;
+  box-sizing: border-box;
 }
 .item--photo__content view {
   width: 76rpx;
@@ -24,9 +25,11 @@
   /* border-radius: 50%; */
   overflow: hidden;
   margin-right: 6rpx;
+  box-sizing: border-box
 }
 .m-t-20{
   margin-top:20rpx;
+  box-sizing: border-box;
 }
 .logout{
   width: 100%;

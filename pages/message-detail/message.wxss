@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  min-height: 150rpx;
+  min-height: 230rpx;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -31,6 +31,7 @@
    flex: 1;
      padding-right: 20rpx;
   padding-left: 20rpx;
+    box-sizing: border-box;
 }
 .m_d_time{
   margin-right: 10rpx;

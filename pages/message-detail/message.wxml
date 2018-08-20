@@ -1,6 +1,8 @@
 <view class='m_d_c'>
  <view class='m_d_t'>
-    <view class='m_d_time'>{{detail.sendAt}}</view>
+    <view class='m_d_time'>
+    <date-label  value='{{detail.sendAt}}'></date-label>
+      </view>
      <view>{{detail.title}}</view> 
   </view> 
     <view class='m_d_b'>{{detail.content}}</view> 

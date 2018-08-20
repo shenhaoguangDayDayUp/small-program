@@ -1,1 +1,11 @@
-{}
+
+{
+  "navigationBarTitleText": "消息详情",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "normal-cell-item": "/components/normal-cell-item/index",
+    "image-view": "/components/image-view/index",
+          "date-label": "/components/date-label/index"
+  }
+}
