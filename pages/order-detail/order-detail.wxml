@@ -31,11 +31,11 @@
                           </view>
             </view>
         </view> 
-         <!-- <view class="submit-box"
+          <view class="submit-box"
          wx:if='{{detail.status =="REQUEST"}}'>
       <view class="submit-cancel"
            bindtap='gotoCancel'>取消</view>
       <view class="submit-btn"
            bindtap='gotoPayment'>支付</view>
-    </view> -->
+    </view> 
 </container>
