@@ -2,6 +2,8 @@
 import ajax from '../../utils/request';
 import { pageTo } from '../../utils/utils';
 import { $wuxDialog, $wuxLoading } from '../../templates/index';
+import { sha1 } from '../../utils/util';
+
 Page({
 
   /**
@@ -14,7 +16,10 @@ Page({
     productInfo: {},
     receiver: {},
     goodsItem: {},
-    show:false
+    show:false,
+    ishow:false,
+    payTitle:'请输入兑换密码',
+    passwordRedeem:''
   },
 
   /**
@@ -84,11 +89,37 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoPayment(){
-    ajax('store/order/redeem/{code}', this.data.code.code).put().then(res => {
+  close(){
+
+  },
+  passend(value){
+    var val = value.detail.value;
+    // val =   Number(val);
+    this.setData({ passwordRedeem:val})
+    var form = {}
+    form.passwordRedeem = sha1(this.data.passwordRedeem)
+    ajax('store/order/redeem/{code}', this.data.code.code).paramters(form).put().then(res => {
       this.show('购买成功')
       wx.switchTab('../reward/reward')
+      this.setData({
+        ishow: false
+      })
+    }).catch(err=>{
+      this.setData({
+        ishow: false
+      })
+
     })
+  },
+  gotoPayment(){
+
+    ajax('member/password/redeem').get().then(res=>{
+       this.setData({
+         ishow:true
+       })
+
+    })
+
   },
   gotoCancel(){
     ajax('store/order/cancel/{code}', this.data.code.code).put().then(res => {

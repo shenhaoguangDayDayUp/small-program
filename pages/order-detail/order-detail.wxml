@@ -38,4 +38,13 @@
       <view class="submit-btn"
            bindtap='gotoPayment'>支付</view>
     </view> 
+   <payment close='close' bindpasend='passend' payTitle='{{payTitle}}' isPay='{{ishow}}'>
+      <view slot='content' class='conver_content'>
+          <view class='conver_title'>兑换积分</view>
+           <view class='conver_price color-gold'>       
+            <image src="/images/img/big_gold@2x.png"></image>  
+               <view>{{detail.grandTotal}}</view>   
+                        </view>
+      </view>
+   </payment>
 </container>
