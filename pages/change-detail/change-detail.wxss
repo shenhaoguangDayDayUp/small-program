@@ -1,0 +1,64 @@
+/* pages/change-detail/change-detail.wxss */
+
+.divider {
+    padding-top: 40rpx;
+    font-size: 20rpx;
+  }
+  .change-content{
+    padding-bottom:94rpx;
+       color: #fff;
+  }
+  .change {
+        color: #fff;
+    background: #23262b;
+    height: 100%;
+    font-size: 28rpx;
+
+    
+  }
+
+   .change-content .contents {
+      padding-left: 20rpx;
+      padding-right: 20rpx;
+      width: 100%;
+      box-sizing: border-box;
+      padding-bottom:94rpx;
+
+   
+     
+     
+    }
+
+   .change-content .contents .sticky-content {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index:100;
+      }
+   .change-content .contents    .scoller-content{
+        position: relative;
+        padding-top:  94rpx;
+      }
+ .change-content .contents    .vux-fixed {
+        width: 95% !important;
+      } 
+
+
+.change-content .contents      .title {
+        background: #23262b;
+        display: flex;
+        flex-direction: row;
+        height: 94rpx;
+        padding-left: 18rpx;
+        padding-right: 18rpx;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1rpx solid #ffcb16;
+      
+      }
+   .change-content .contents .title .title-left {
+          color: #ffcb16;
+        }
+ .change-content .contents .title .title-right {
+          color: #ffcb16;
+        }

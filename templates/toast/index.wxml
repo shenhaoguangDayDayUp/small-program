@@ -1,0 +1,6 @@
+<template name='hd_toast'>
+   <view  class='toast-mask-layer {{isHide ? "toast-hide":""}}'>
+    <view class='toast-content animated {{contentShow ? "fadeIn":"fadeOut"}}'>{{tips}}</view>
+  </view> 
+
+</template>

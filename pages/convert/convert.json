@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "兑换",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "image-view": "/components/image-view/index",
+    "price": "/components/price/index",
+    "address": "/components/address/address",
+    "goods-item": "/components/goods-item/goods-items"
+  }
+}

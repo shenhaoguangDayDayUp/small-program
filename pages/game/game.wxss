@@ -1,0 +1,47 @@
+/* pages/game/game.wxss */
+.game-container{
+  width: 100%;
+  /* padding: 35rpx 20rpx 0 20rpx; */
+  color: white;
+  font-size: 28rpx;
+}
+.title-bar{
+ padding: 35rpx 20rpx 0 20rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title-bar .bar{
+  width: 5rpx;
+  height: 35rpx;
+  background: #ffcb16;
+  margin-right: 10rpx;
+}
+.list-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.game-item{
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 260rpx;
+}
+.game-item .item{
+  width: 200rpx;
+  height: 200rpx;
+  padding-top: 20rpx;
+}
+.game-item .item-name{
+  margin-top: 20rpx;
+  height: 30rpx;
+  width: 150rpx;
+  text-align: center
+}

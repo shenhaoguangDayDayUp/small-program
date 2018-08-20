@@ -1,0 +1,10 @@
+<!-- 我的 界面普通cell -->
+<view class='sd__normal__cell__item {{hideline ? "":"sd__normal__cell__item--line"}}' 
+  hover-class='sd__normal__cell__item-hover'
+  hover-stay-time='250'>
+  <image class='sd__normal__cell__item--icon' src="{{icon}}"></image>
+  <view class='sd__normal__cell__item--title'>{{title}}</view>
+  <view class='sd__normal__cell__item--content'>{{content}}</view>
+  <image wx:if='{{!hidearrow}}'class='sd__normal__cell__item--access' src='/images/img/ic_more.png'></image>
+  <view wx:else class='sd__normal__cell__item--access'></view>
+</view>

@@ -1,0 +1,57 @@
+<!--pages/main-detail/main-detail.wxml-->
+<wxs module="util">
+  function map(mobile) {
+    var number = mobile + '';
+    var reg = getRegExp("(\d{3})\d{4}(\d{4})", "g");
+    var numbers = number.replace(reg, "$1****$2");
+    return numbers;
+  }
+
+  function idCard(mobile) {
+    var number = mobile + '';
+    var reg = getRegExp("(\d{6})\d{8}(\d{4})", "g");
+    var numbers = number.replace(reg, "$1********$2");
+    return numbers;
+  }
+  module.exports = {
+    map: map,
+    idCard: idCard
+
+  }
+</wxs>
+
+<container loading="{{firstLoading}}">
+
+  <view class='item--photo' bindtap='choosePhoto'>
+    <view class='item--title'>头像</view>
+    <view class='item--photo__content'>
+      <view>
+        <image-view width="76rpx" height="76rpx" src="{{user.avatar}}" />
+      </view>
+    </view>
+  </view>
+  <normal-cell-item title="昵称" hideline="{{false}}" bindtap="gotoNext" content='{{user.nickname}}' data-index="1">
+  </normal-cell-item>
+  <view class='m-t-20'>
+    <normal-cell-item title="姓名" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{user.name}}'>
+    </normal-cell-item>
+  </view>
+  <normal-cell-item title="手机号" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{util.map(user.mobileNumber)}}'>
+  </normal-cell-item>
+  <normal-cell-item title="手机号" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{util.idCard(user.idCardNumber)}}'>
+  </normal-cell-item>
+  <view class='m-t-20'>
+    <normal-cell-item title="收货地址" hideline="{{false}}" bindtap="gotoNext" data-index="2">
+    </normal-cell-item>
+  </view>
+    <view class='m-t-20'>
+    <normal-cell-item title="设置密码" hideline="{{false}}" bindtap="gotoNext" data-index="3">
+    </normal-cell-item>
+  </view>
+    <view class='logout m-t-20'   hover-class='sd__normal__cell__item-hover'
+  hover-stay-time='250'>
+        登出
+    </view>
+
+
+</container>

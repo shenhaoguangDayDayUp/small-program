@@ -1,0 +1,8 @@
+<view class='sd__price__content'>
+  <view class='sd__price-tips' wx:if="{{!noicon}}">
+    <image class='icon' src='/images/img/big_gold@2x.png'></image>
+  </view>
+  <view class='{{active?"sd__price-count":"activeColor"}}'>{{value}}</view>
+
+  <view wx:if="{{linethrough}}" class='sd__price-line'></view>
+</view>

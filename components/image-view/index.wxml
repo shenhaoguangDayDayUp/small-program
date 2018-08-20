@@ -1,0 +1,14 @@
+<view style="width:{{width}}; height:{{height}}; background-color:#e3e3e3; position:relative;overflow: hidden;">
+  <view class='sd__imgview__loading'>
+    <view wx:if="{{!hasLoaded && src.lenght > 0}}" class='weui-loading weui-icon_toast'></view>
+  </view>
+  <image mode='aspectFill' 
+        class='sd__imgview__content'
+        style="width:100%; height:100%;" 
+        src="{{imageSrc}}" 
+        bindtap='_onImgTap'
+        bindload='_onImgLoad'
+        lazy-load="{{true}}"
+        binderror="_onImgError"> 
+  </image> 
+</view>

@@ -1,0 +1,87 @@
+<import src='/templates/loadmore/index.wxml'/>
+
+<wxs module="util">
+  function map(orderStatus, shippingType, cellphone) {
+    if(orderStatus == 'TIMEOUT'){
+      return '订单已过期';
+    }
+    if(orderStatus == 'NEW_ORDER' || orderStatus == 'PRE_PAY'){
+      return '待支付';
+    }
+    if(orderStatus == 'PAYMENT'){
+      return '订单处理中';
+    }
+    if(orderStatus == 'PAID' && shippingType == 'UNKNOWN'){
+      return '已支付';
+    }
+    if(orderStatus == 'PAID' && shippingType == 'PERSENT'){
+      return '待填地址';
+    }
+    
+    if(orderStatus == 'PRE_DELIVER'){ // 待发货
+      return '待发货';
+    }
+    if(orderStatus == 'PRE_PICK_UP'){
+      return '待提货';
+    }
+    if(orderStatus == 'PRE_ACCEPT'){ // 待收货
+      return '待收货';
+    }
+    // 已提货、已收货
+    if(orderStatus == 'PICKUP' || orderStatus == 'ACCEPT'){
+      return '已完成';
+    }
+    if(orderStatus == 'ALREADY_REVIEW'){
+      return '已评价';
+    }
+    if(orderStatus == 'BUYER_CANCEL'){
+      return '已取消';
+    }
+  }
+
+  module.exports = {
+    map: map,
+  }
+
+</wxs>
+
+<template name="order-list">
+      <view class='order-list-item'>
+       <view class="order-content"
+             bindtap='gotoDetail'
+             wx:for="{{orderList}}"
+             wx:key="{{index}}"
+             data-index='{{index}}'
+             >
+          <view class="content-title">
+            <view class="title-left">{{item.placeAt}}</view>
+            <!-- <view class="title-center">{{item.status|orderStatus}}</view> -->
+            <view class="title-right">
+              <view class='title-right-img'>
+                <image src="../../images/img/big_gold@2x.png" alt=""></image>
+              </view>
+              <view>{{item.grandTotal}}</view>
+            </view>
+          </view>
+          <view class="content-list">
+            <view class="img-content">
+               <view class="content-image"
+                     wx:for="{{item.items}}"
+                   wx:for-item="items"
+                   wx:for-index="innerIndex" 
+                   wx:key="{{innerIndex}}"
+                   wx:if='{{innerIndex<3}}' 
+                   >   
+                 <image src="{{items.product.imagePath}}"
+                     alt=""></image> 
+               </view> 
+            </view>
+            <view class="content-right">
+              <view class="right-arrow"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    
+ 
+</template>

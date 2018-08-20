@@ -1,0 +1,28 @@
+   
+  
+<wxs module="util">
+  function orderStatus(val) {
+    return {
+      "BONUS": "赠送",
+      "REDEEM": "兑换",
+      "BET": '下注',
+      "PAYOUT": "奖金",
+      "RECHARGE": "充值",
+  }[val]
+  }
+
+  module.exports = {
+    orderStatus: orderStatus,
+  }
+
+</wxs> 
+   
+   
+    <view class="change-item">
+        <view class="item-time {{ item.type=='REDEEM'||item.type=='BET'?'':'gold'}}">
+       <date-label value='{{item.updateAt}}'></date-label> 
+        </view>
+         <view class="item {{ item.type=='REDEEM'||item.type=='BET'?'':'gold'}}">{{item.note}}</view>
+          <view class="item-type {{ item.type=='REDEEM'||item.type=='BET'?'':'gold'}}">{{util.orderStatus(item.type)}}</view>
+           <view class="item-amount {{ item.type=='REDEEM'||item.type=='BET'?'':'gold'}}">{{item.amount}}</view>
+    </view>

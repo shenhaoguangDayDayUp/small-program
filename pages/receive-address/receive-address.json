@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "收货地址",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "receive-address": "/components/receive-address/index",
+    "image-view": "/components/image-view/index"
+  }
+}

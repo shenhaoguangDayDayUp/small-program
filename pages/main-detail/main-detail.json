@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "会员信息",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "normal-cell-item": "/components/normal-cell-item/index",
+     "image-view": "/components/image-view/index"
+  }
+}

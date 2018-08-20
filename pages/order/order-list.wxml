@@ -1,0 +1,22 @@
+<!--pages/order/order-list.wxml-->
+<include src="/templates/include.wxml"/>
+<import src="/templates/order-list/index.wxml"/>
+
+<scroll-view class='nav-tab ' scroll-x="{{true}}" scroll-left="{{move * 2}}" scroll-with-animation="{{true}}">
+  <view class='nav-tab-content'>
+    <view id='nav-tabb-item__0' class='nav-tab-item {{tabbarIndex == 0 ? "nav-tab-item-sel" : ""}}' data-index='0' bindtap='switchTabbar'>待付款</view>
+    <view id='nav-tabb-item__1' class='nav-tab-item {{tabbarIndex == 1 ? "nav-tab-item-sel" : ""}}' data-index='1' bindtap='switchTabbar'>待收货</view>
+    <view id='nav-tabb-item__2' class='nav-tab-item {{tabbarIndex == 2 ? "nav-tab-item-sel" : ""}}' data-index='2' bindtap='switchTabbar'>全部订单</view>
+
+
+    <view class="nav-tab-line {{!animate ? 'tab__line--animate' : 'tab__line--animate'}}" style="left:{{move}}%; width: {{width}}%;">
+      <view class='nav-tab-line-data'></view>
+    </view>
+  </view>
+  </scroll-view>
+<container loading="{{firstLoading}}">
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}">  
+       <template is="order-list" data="{{...orderData}}"/>
+</scroll-view>
+       <template is="loadmore" data="{{loading:isLoading, nomore: !hasMore, nodata: !hasData}}"/>
+</container>

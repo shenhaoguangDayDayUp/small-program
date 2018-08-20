@@ -1,0 +1,26 @@
+@import "./animate.wxss";
+.toast-mask-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.toast-hide {
+  display: none;
+}
+.toast-content {
+  background-color: rgba(40, 40, 40, 0.75);
+  font-size: 34rpx;
+  color: #fff;
+  padding: 24rpx 36rpx;
+  border-radius: 8rpx;
+  max-width: 70%;
+  text-align: center;
+  line-height: 1.6;
+}

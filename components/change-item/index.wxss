@@ -1,0 +1,33 @@
+/* components/change-item/index.wxss */
+
+  .change-item{
+        width: 100%;
+        font-size: 28rpx;
+        color: white;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 87rpx;
+        border-bottom: 2rpx solid #323540;   
+    }
+
+    .change-item .gold{
+            color:#ffcb16;
+        }
+     .change-item .item-time{
+            width: 40%;
+           text-align: left;
+        }
+     .change-item .item{
+            flex: 1;
+            text-align: center;
+        }
+     .change-item .item-type{
+              flex: 1;
+            text-align: center;
+        }
+    .change-item .item-amount{
+             flex: 1;
+            text-align: right;
+        }

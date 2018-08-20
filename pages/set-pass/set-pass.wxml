@@ -1,0 +1,8 @@
+ <view class='m-t-20'>
+    <normal-cell-item title="重置密码" hideline="{{false}}" bindtap="gotoNext" data-index="1">
+    </normal-cell-item>
+  </view>
+    <view class='m-t-20'>
+    <normal-cell-item title="设置兑换密码" hideline="{{false}}" bindtap="gotoNext" data-index="2">
+    </normal-cell-item>
+  </view>

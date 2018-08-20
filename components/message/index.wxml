@@ -1,0 +1,5 @@
+<!--components/message/index.wxml-->
+<view class='me_com_container'>
+    <view class='me_com_time {{!item.readAt?"me_com_active":""}}'>{{item.sendAt}}</view>
+    <view class='me_com_record {{!item.readAt?"me_com_active":""}}'>{{item.title}}</view>
+</view>

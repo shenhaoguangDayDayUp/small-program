@@ -1,0 +1,7 @@
+<view class='m_d_c'>
+ <view class='m_d_t'>
+    <view class='m_d_time'>{{detail.sendAt}}</view>
+     <view>{{detail.title}}</view> 
+  </view> 
+    <view class='m_d_b'>{{detail.content}}</view> 
+</view>

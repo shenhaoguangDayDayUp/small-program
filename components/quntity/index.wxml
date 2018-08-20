@@ -1,0 +1,11 @@
+<view class='sd__quantity'>
+  <view class='sd__quantity__btn' catchtap='doMinus' hover-class='sd__quantity__btn-hightlighted'>
+    <image class='icon' src='/images/img/jianhao@2x.png'></image>
+  </view>
+  
+  <input class='sd__quantity__input' bindblur='onInputChange' value='{{value}}' type='number'/>
+  
+  <view class='sd__quantity__btn' catchtap='doPlus' hover-class='sd__quantity__btn-hightlighted'>
+    <image class='icon' src='/images/img/jiahao@2x.png'></image>
+  </view>
+</view>

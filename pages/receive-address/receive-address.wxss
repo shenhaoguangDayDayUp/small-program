@@ -1,0 +1,7 @@
+/* pages/receive-address/receive-address.wxss */
+.addbtn{
+  margin-top:40rpx;
+  width: 80%;
+  background: #ffcb16 !important;
+   margin-bottom:40rpx;
+}

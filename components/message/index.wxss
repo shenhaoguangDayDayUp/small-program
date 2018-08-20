@@ -1,0 +1,21 @@
+/* components/message/index.wxss */
+.me_com_container{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20rpx;
+    padding-right: 20rpx;
+    background: #2a2d36;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 20rpx;
+
+}
+.me_com_time{
+  padding-right: 20rpx;
+}
+.me_com_active{
+  color:#ffcb16;
+}

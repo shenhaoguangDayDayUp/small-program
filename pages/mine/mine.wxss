@@ -1,0 +1,118 @@
+/* pages/mine/mine.wxss */
+.mine-header-container{
+  height:230rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f323b;
+  margin: 20rpx 0 20rpx 0;
+  padding: 0 40rpx 0 40rpx;
+  color: white;
+
+}
+.mine-header-container .left-container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: nowrap;
+   width: 100%; 
+  /* width: 280rpx; */
+}
+.mine-header-container .left-container .mine-header-img{
+  width: 150rpx;
+  height: 150rpx;
+}
+.mine-header-container .left-container .mine-header-user{
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+.mine-header-container .right-container{
+  
+}
+.mine-header-container .right-container .right-arrow{
+  display: inline-block;
+    border-right: 5rpx solid #ccc;
+    border-bottom: 5rpx solid #ccc;
+    width: 22rpx;
+    height: 22rpx;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg)
+}
+.mine-score-container{
+  height:230rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #2f323b;
+  margin: 0rpx 0 20rpx 0;
+  padding: 0 20rpx 0 20rpx;
+  color: white;
+}
+.mine-score-header{
+  padding-top: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start
+
+}
+
+.mine-score-header .bar{
+  width: 5rpx;
+  height: 30rpx;
+  background: #ffcb16
+ 
+}
+.mine-score-header .header-text{
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+.mine-score-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex:1;
+}
+.mine-score-content .item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  
+}
+.item-image{
+  width: 50rpx; 
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.item-title{
+    /* width: 50rpx; 
+  height: 50rpx; */
+  line-height: 50rpx;
+  margin-bottom: 10rpx;
+  height: 50rpx;
+}
+.mine-header-login-user{
+  box-sizing: border-box;
+
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 40rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+
+  /* width: 300rpx; */
+  /* flex: 1 */
+}

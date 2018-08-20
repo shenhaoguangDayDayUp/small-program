@@ -1,0 +1,120 @@
+.right-arrow {
+    display: inline-block;
+    border-right: 5rpx solid #ccc;
+    border-bottom: 5rpx solid #ccc;
+    width: 22rpx;
+    height: 22rpx;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+ }
+ .order-list-item{
+  margin-top: 100rpx;
+  color: white;
+ }
+ .order-list {
+  overflow:auto;
+  color: #fff;
+  background: #23262b;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 94rpx;
+ 
+  }
+   .order-scoller {
+    min-height: 80%;
+    }
+     .nav-bar {
+    font-size: 34rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 20rpx;
+    background: #1b1a20;
+    }
+        .nav-bar .left-back {
+      flex: 1;}
+
+         .nav-bar .title {
+      flex: 1;
+      text-align: center;
+    }
+       .nav-bar .right {
+      flex: 1;
+    }
+     .order-content {
+    font-size: 28rpx;
+    height: 388rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    background: #2a2d36;
+    margin-bottom: 22rpx;
+    }
+       .content-title::after {
+      content: " ";
+      position: absolute;
+      bottom: 15rpx;
+      right: 0rpx;
+      left: 0rpx;
+      border-bottom: 2rpx solid #323540;
+      transform-origin: 0% 0%;
+    }
+     .content-title {
+          position: relative;
+      height: 128rpx;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;  
+    }
+      .content-title .title-left {
+        text-align: left;
+      }
+       .content-title .title-center {
+        text-align: center;
+      }
+       .content-title .title-right {
+        text-align: right;
+        margin-right: 5rpx;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
+
+      }
+     .content-title .title-right image{
+          width: 34rpx;
+          height: 34rpx;
+          padding-right: 10rpx;
+        }
+   .content-list {
+      padding-top: 15rpx;
+      display: flex;
+      flex-wrap: nowrap;
+      height: 206rpx;
+      align-items: center;
+      justify-content: center;  
+    }
+     .content-list  .content-right {
+        flex: 1;
+      }
+     .content-list  .img-content {
+        height: 100%;
+        flex: 20;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center; 
+      }
+     .content-list .img-content .content-image {
+          width: 200rpx;
+          height: 100%;
+          margin-right: 10rpx;
+          overflow: hidden;
+          
+        }
+         .content-list .img-content .content-image  image {
+            width: 100%;
+            height: 100%;
+          }

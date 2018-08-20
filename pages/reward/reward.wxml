@@ -1,0 +1,53 @@
+<!--pages/reward/reward.wxml-->
+<include src="/templates/include.wxml" />
+
+<container loading="{{firstLoading}}">
+  <view class='banner-container'>
+    <swiper class='banner-container' autoplay='{{true}}' circular='{{true}}' duration='350' indicator-dots='{{bannerList.length > 1}}'>
+      <swiper-item class="banner-container" wx:for="{{bannerList}}" wx:key="{{index}}">
+        <image-view data-index='{{index}}' bindimgtap="onBannerImgTap" width="100%" height="438rpx" src="{{item}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view>
+    <view class='reword-header'>
+      <view class='reword-text'>
+        <view class='reword-text-dot'> </view>
+        <view class='reword-text-content'>推荐商品</view>
+        <view class='reword-text-dot'></view>
+      </view>
+    </view>
+    <view class='recomond'>
+      <scroll-view scroll-x="{{true}}" class='section-list'>
+        <view class='item' wx:for="{{newArrivalList}}" wx:key="{{index}}" bindtap='gotoDetail' data-index='{{index}}' data-type='0'>
+          <image-view class='item-icon border-all_1' width="290rpx" height="290rpx" src="{{item.imagePath}}" />
+          <view class='item-title line_1 '>{{item.name}}</view>
+          <price class='item-price' value="{{item.price}}" />
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class='reword-header'>
+    <view class='reword-text'>
+      <view class='reword-text-dot'> </view>
+      <view class='reword-text-content'>全部商品</view>
+      <view class='reword-text-dot'></view>
+    </view>
+  </view>
+  <view class='goods-container'>
+  <view class='goods-list'>
+    <view class='goods-item border-bottom_1' wx:for="{{goodsList}}" wx:key="{{index}}" bindtap='gotoGoodsDetail' data-index='{{index}}'>
+      <view class='goods-item-icon border-all_1'>
+        <image-view width="314rpx" height="314rpx" src="{{item.imagePath}}" />
+      </view>
+      <view class='goods-item__content'>
+        <view class='goods-item-title line_1'>{{item.name}}</view>
+        <view class='goods-item-price'>
+          <price value="{{item.price}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <template is="loadmore" data="{{loading:isLoading, nomore: !hasMore, nodata: !hasData}}"/>
+</container>

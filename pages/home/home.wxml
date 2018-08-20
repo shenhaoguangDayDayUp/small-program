@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view animation='{{animationData}}' bindtap='_onBtnClick'>
+点击事件
+</view>

@@ -1,0 +1,131 @@
+/* pages/reward/reward.wxss */
+.banner-container {
+  width: 100%;
+  height: 438rpx;
+  background-color: #e2e2e2;
+  position: relative;
+}
+.reword-header{
+  height: 84rpx;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30rpx;
+}
+.reword-text{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 */
+}
+.reword-text-content{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.reword-text-dot{
+  width: 15rpx;
+  height: 15rpx;
+  background: #fdcd00;
+  border-radius: 15rpx;
+}
+.recomond{
+  text-align:center;
+  padding: 0 20rpx 0rpx 20rpx;
+    
+}
+.recomond-container{
+    padding: 20rpx;
+
+}
+.section-list {
+  padding-top: 12px;
+    background: white;
+  width: 100%;
+  white-space: nowrap;
+   /* margin-top: 20rpx;  */
+}
+.section-list .item {
+  width: 290rpx;
+  height: 410rpx;
+  display: inline-flex;
+  background-color: #fff;
+  margin-left: 20rpx;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.section-list .item:first-child {
+  margin-left: 30rpx;
+}
+.section-list .item-title {
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 22rpx;
+ 
+}
+.section-list .item-price {
+  /* font-size: 26rpx; */
+  margin-top: 10rpx;
+}
+.goods-container{
+  padding: 0 20rpx 0rpx 20rpx;
+}
+.goods-list {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.goods-item{
+    width: 50%;
+  height: 450rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.goods-item:nth-child(odd)::before {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid #e7e7e7;
+  transform: scaleX(0.5);
+  transform-origin: 100% 0;
+}
+.goods-item-icon{
+    margin-top: 30rpx;
+  width: 314rpx;
+  height: 314rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods-item__content {
+  width: 314rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.goods-item-title {
+  max-width: 314rpx;
+  font-size: 30rpx;
+  color: #262626;
+  margin-top: 16rpx;
+}
+.goods-item-price {
+  text-align: center;
+  font-size: 28rpx;
+  color: #D0021B;
+  line-height: 34rpx;
+  margin-top: 12rpx;
+}

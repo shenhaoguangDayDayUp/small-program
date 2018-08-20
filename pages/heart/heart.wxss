@@ -1,0 +1,132 @@
+/* pages/heart/heart.wxss */
+.cart-item {
+  width: 100%;
+  height: 240rpx;
+  background-color: #2a2c35;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-top: 22rpx;
+}
+.cart-radio {
+  width: 76rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-radio image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.cart-right {
+  display: flex;
+  flex-direction: row;
+  height: 156rpx;
+}
+.cart-right .cart-right-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+}
+.cart-title {
+  font-size: 30rpx;
+  color: #fff;
+   max-width: 500rpx; 
+}
+.cart-price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 32rpx;
+  color: #D0011B;
+}
+.goods-quantity_content {
+  position: absolute;
+  right: 30rpx;
+  bottom: 40rpx;
+}
+
+.footer-bar {
+  z-index: 10;
+  width: 100%;
+  color: white;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  height: 122rpx;
+  border-top: 1rpx solid #323540;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #23262b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  }
+  .footer-bar .select-all-img {
+    margin-right: 10rpx;
+    
+  }
+    .select-all-img image{
+       width: 30rpx;
+       height: 30rpx;
+       line-height:122rpx
+
+    }
+    .select-all-quntity{
+      display: flex
+    }
+     .select-all-quntity view {
+
+      color: #ffcb16;
+    
+  }
+   .select-all-score {
+    color: #ffcb16;
+    margin-left: 10rpx;
+  }
+   .select-all-button {
+    background: #ffcb16;
+      font-size: 32rpx;
+    margin-left: 20rpx;
+    height: 80rpx;
+    /* padding: 20rpx; */
+    flex: 1;
+    text-align: center;
+    border-radius: 10rpx;
+    display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:center;
+margin-right:50rpx;
+    
+  }
+ .select-all-button .select-all-pay {
+      color: black;
+    }
+  .select-all-button-disabled {
+   font-size: 32rpx;
+    margin-left: 20rpx;
+    background:#666;
+    height: 80rpx;
+    /* padding: 20rpx; */
+    flex: 1;
+    text-align: center;
+    border-radius: 10rpx;
+    display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:center;
+margin-right:50rpx;
+    
+  }
+  .select-all-button-disabled .select-all-pay-disabled {
+      color:#000;
+    }
+    .product-view{
+      margin-bottom: 122rpx
+    }

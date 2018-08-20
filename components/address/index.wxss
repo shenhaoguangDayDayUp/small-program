@@ -1,0 +1,73 @@
+/* components/receive-address/index.js.wxss */
+.receive_comp_container{
+  padding-top:40rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 20rpx;
+  background: #2f323b;
+  height: 210rpx;
+  color: white;
+  box-sizing: border-box;
+  line-height: 40rpx;
+  margin-bottom: 20rpx;
+}
+.receive_comp_layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 70%;
+  border-bottom: 1rpx solid #323540;
+
+}
+.receive_comp_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.receive_comp_body{
+  margin-top:30rpx;
+}
+.receive_comp_name{
+  width: 100rpx;
+} 
+.receive_comp_phone{
+  display: flex;
+  flex-grow: 1;
+  justify-content:flex-end;
+}
+.receive_comp_bottom{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  height:30%
+}
+.receive_comp_default{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%
+}
+.img{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.receive_comp_end{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.receive_comp_edit{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.m-r-10{
+  margin-right: 20rpx;
+}

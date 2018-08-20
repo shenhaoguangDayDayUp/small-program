@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "重置密码",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "pass-check": "/components/pass-check/index",
+    "message-check": "/components/message-check/index"
+  }
+}

@@ -1,0 +1,142 @@
+/* pages/login/login.wxss */
+.login-container{
+  width: 100%;
+  height: 100%;
+}
+.login-content{
+  padding: 150rpx 80rpx 0 80rpx;
+  
+}
+.tip{
+  width: 20rpx;
+  height: 20rpx;
+}
+.tip-content{
+  color: #ffcb16;
+  display: flex;
+  height: inherit;
+}
+.alert{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30rpx;
+}
+.inputText{
+  border-bottom: 1px solid white;
+  color: white !important;
+}
+.eyes-image{
+  position: relative;
+
+}
+checkbox .wx-checkbox-input{
+
+   width: 28rpx; /* 背景的宽 */
+   height: 28rpx; /* 背景的高 */
+   background: transparent
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  color: #ffcb16;
+}
+.remenber{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50rpx;
+  font-size: 28rpx;
+}
+.auto-login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffcb16;
+}
+.forget{
+  color: #ffcb16;
+}
+.login-btn{
+  width: 100%;
+  margin-top: 40rpx;
+ 
+}
+.btn-active{
+  background: #ffcb16 !important;
+}
+.account{
+  color: white;
+} 
+.register{
+ color: #ffcb16;
+}
+.footer{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+button[disabled]:not([type]){
+  background: #666
+}
+.check_code{
+    position: relative;
+      box-sizing: border-box;
+        width: 100%;
+}
+.codeBtn{
+    position: absolute;
+  right: 0;
+  top: 12rpx;
+  color: white;
+  z-index: 100;
+}
+.code_unactive{
+  color: #666;
+} 
+.code_acitve{
+color: white;
+}
+
+.item--normal {
+  height: 80rpx;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-bottom: 1rpx solid white;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  padding-bottom: 15rpx;
+   
+}
+.item--subtitle {
+  flex: 1;
+  margin-right: 6rpx;
+  text-align: left;
+   color: white; 
+}
+.item--subtitle--tips {
+  color: #777676; 
+}
+.item--access {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.areas{
+  height:152rpx;
+  font-size: 32rpx;
+  /* text-indent: 28rpx; */
+  border-bottom: 1rpx solid white;
+  /* padding-top: 30rpx; */
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+  color: white;
+}

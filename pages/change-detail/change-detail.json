@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "交易明细",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "change-item": "/components/change-item/index"
+  }
+}

@@ -1,0 +1,74 @@
+/* components/address/address.wxss */
+.right-arrow {
+  display: inline-block;
+  border-right: 5rpx solid #ccc;
+  border-bottom: 5rpx solid #ccc;
+  width: 22rpx;
+  height: 22rpx;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+.change-address {
+  color: white;
+  height: 230rpx;
+  width: 100%;
+  background: #2a2d36;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  }
+  .change-address .receive {
+    height: 108rpx;
+    width: 50%;
+    line-height: 108rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .receive .title {
+      margin-left: 20rpx;
+    }
+  .receive .name {
+      margin-left: 20rpx;
+    }
+
+    .change-address .tel {
+    flex: 1;
+    line-height: 108rpx;
+    text-align: right;
+    margin-right: 67rpx;
+  }
+
+    .receive-detail {
+        padding-right: 20rpx;
+    padding-left: 20rpx;
+    height: 122rpx;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    }
+   .receive-detail .right-img {
+      width: 30rpx;
+
+    }
+   .receive-detail .receive-detail-title {
+     line-height:40rpx;
+     display: flex;
+      margin-right: 20rpx;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }

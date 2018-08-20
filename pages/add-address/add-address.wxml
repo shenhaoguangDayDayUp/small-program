@@ -1,0 +1,63 @@
+<include src="/templates/include.wxml" />
+
+<view class='login-container'>
+  <view class='login-content'>
+
+    <form bindsubmit="submitForm">
+
+      <view class="inputView">
+        <view class='alert' wx:if='{{rule.name.show}}'>
+          <image class='tip' src='/images/img/tishi@2x.png'></image>
+          <view class='tip-content'>{{rule.name.message}}</view>
+        </view>
+        <input class="inputText" value='{{form.name}}' name='name' placeholder="请输入姓名" bindblur='nameBlur' bindinput="nameInput" />
+      </view>
+
+
+      <view class="inputView" style='margin-top:20rpx'>
+        <view class='alert' wx:if='{{rule.phone.show}}'>
+          <image class='tip' src='/images/img/tishi@2x.png'></image>
+          <view class='tip-content'>{{rule.phone.message}}</view>
+        </view>
+        <input name='mobileNumber' value='{{form.mobileNumber}}' class="inputText" placeholder="请输入手机号" bindblur='phoneBlur' bindinput="phoneInput" />
+      </view>
+
+      <picker mode='region' bindchange='onRegionChange' value='{{values}}'>
+        <view class='item--normal border-bottom_1'>
+          <!-- <view class='item--title'>所在地区</view> -->
+          <view class='item--subtitle' wx:if="{{hasChooseRegion}}">
+            {{address.province}}-{{address.city}}-{{address.district}}
+          </view>
+          <view class='item--subtitle item--subtitle--tips' wx:else>请选择地区</view>
+          <image class='item--access' src='/images/img/ic_more.png'></image>
+        </view>
+      </picker>
+
+
+      <view class="inputView" style='margin-top:20rpx'>
+        <view class='alert' wx:if='{{rule.street.show}}'>
+          <image class='tip' src='/images/img/tishi@2x.png'></image>
+          <view class='tip-content'>{{rule.street.message}}</view>
+        </view>
+        <textarea class="areas" value='{{form.street}}' placeholder='街道' bindinput="streetInput" bindblur='streetBlur'> </textarea>
+
+      </view>
+      <view class='remenber'>
+        <view class='auto-login'>
+          <checkbox-group bindchange="serviceValChange">
+            <checkbox  checked='{{form.favorite}}' />
+          </checkbox-group>
+          <view>设置为默认地址</view>
+        </view>
+
+
+      </view>
+      <button disabled='{{disabled}}' class="login-btn {{!disabled ? 'btn-active':''}}" formType="submit"> 保存</button>
+      <view class='footer'>
+        {{mycode}}
+      </view>
+
+    </form>
+  </view>
+
+</view>

@@ -1,0 +1,23 @@
+<!--pages/change-detail/change-detail.wxml-->
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+   <view class="change-content">
+      <view class="contents">
+        <view class="sticky-content">
+            <view class="title">
+              <view class="title-left">余额</view>
+              <view class="title-right">{{remaind}}</view>
+            </view>
+        
+        </view>
+        <view class="scoller-content">
+        <block wx:for='{{list}}' wx:key='{{index}}'>
+                  <change-item item='{{item}}'></change-item>
+                  </block>
+               <template is="loadmore" data="{{loading:isLoading, nomore: !hasMore, nodata: !hasData}}"/>         
+
+        </view>
+      </view>
+    </view>
+
+</container>

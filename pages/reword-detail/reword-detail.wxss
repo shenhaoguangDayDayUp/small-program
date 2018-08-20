@@ -1,0 +1,94 @@
+.banner-container {
+  width: 100%;
+  height: 600rpx;
+  background-color: #e2e2e2;
+  position: relative;
+}
+.goods-detail-title{
+  padding-top:44rpx;
+    padding-bottom: 44rpx;
+    min-height: 124rpx;
+    width: 100%;
+    background: #2a2d36;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    position: relative;
+    justify-content: space-between;
+    box-sizing: border-box;
+  
+  
+}
+.goods-detail-title .bar{
+      margin-top: 5rpx;
+      width: 7rpx;
+      height: 36rpx;
+      margin-left: 20rpx;
+      background: #ffcb16;
+}
+.goods-detail-title .title{
+        font-size: 36rpx;
+      color: white;
+   
+       max-width: 500rpx; 
+       line-height: 40rpx;
+      
+}
+
+.goods-detail-title .icon {
+      min-width: 100rpx;
+     text-align: right;
+     margin-right: 20rpx;
+    
+   }
+
+ .goods-footer {
+  
+    z-index: 100;
+    height: 124rpx;
+    width: 100%;
+    background: #2a2d36;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+   
+  }
+ .goods-footer > .btn-box:last-child {
+      padding-right: 20rpx;
+    }
+
+   .goods-footer .btn-box {
+      flex: 1;
+      height: 80rpx;
+      padding-left: 20rpx;
+      }
+
+
+ 
+       .goods-footer  .btn {
+        margin: 0;
+        background: #ffcb16;
+        height: 100%;
+        border-radius: 10rpx;
+        text-align: center;
+        color: #000000;
+        font-size: 32rpx;
+        line-height: 80rpx;
+      }
+       .goods-footer  .btn-right{
+        margin: 0;
+        height: 100%;
+        border-radius: 10rpx;
+        text-align: center;
+        color: #000000;
+        font-size: 32rpx;
+        line-height: 80rpx;
+        background: #fdd139
+    }
+    .wxParse-content{
+      margin-bottom: 124rpx;
+    }

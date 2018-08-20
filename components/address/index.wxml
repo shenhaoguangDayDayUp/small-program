@@ -1,0 +1,33 @@
+<!--components/receive-address/index.js.wxml-->
+<view class='receive_comp_container'>
+
+  <view class='receive_comp_layout' bindtap='selectDetail'>
+    <view class='receive_comp_top'>
+      <view class='receive_comp_name'>{{item.name}}</view>
+      <view class='receive_comp_phone'>{{item.mobileNumber}}</view>
+    </view>
+    <view class='receive_comp_body'>
+      {{item.province}}{{item.city}}{{item.district}}{{item.street}}
+    </view>
+  </view>
+  <!-- <view class='receive_comp_bottom'>
+    <view class='receive_comp_default' catchtap='setDefault'>
+      <image class='img' src='{{item.favorite?"/images/img/fuxuan2@1x.png":"/images/img/yuan@1x.png"}}'></image>
+      <view>默认地址</view>
+    </view>
+    <view class='receive_comp_end' catchtap='gotoEdit'>
+      <view class='receive_comp_edit'>
+        <image class='img' src='/images/img/edit.png'></image>
+        <view class='m-r-10'>编辑</view>
+      </view>
+       <view class='receive_comp_edit' catchtap='deleteAddress'>
+        <image class='img' src='/images/img/delete.png'></image>
+        <view>删除</view>
+      </view>
+    </view>
+    <view>
+    </view>
+  </view> -->
+
+
+</view>

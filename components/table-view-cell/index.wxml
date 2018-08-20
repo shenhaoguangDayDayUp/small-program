@@ -1,0 +1,14 @@
+<view class='sd__table--cell'>
+  <view class='sd__table--cell-content' 
+    bindtouchstart="__touchStart" 
+    bindtouchend='__touchEnd' 
+    bindtap='__cellDidTap'
+    animation="{{deleteAnimation}}">
+    <slot />
+  </view>
+  <view class='sd__table--cell-bg'>
+    <view class='sd__table--cell-delete'>
+      <view class='' bindtap='__itemDelete'>删除</view>
+    </view>
+  </view>
+</view>

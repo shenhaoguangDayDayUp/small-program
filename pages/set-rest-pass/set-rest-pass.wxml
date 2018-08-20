@@ -1,0 +1,25 @@
+<include src="/templates/include.wxml" />
+<view class='login-container'>
+  <scroll-view class='nav-tab ' scroll-x="{{true}}" scroll-left="{{move * 2}}" scroll-with-animation="{{true}}">
+    <view class='nav-tab-content'>
+      <view id='nav-tabb-item__0' class='nav-tab-item {{tabbarIndex == 0 ? "nav-tab-item-sel" : ""}}' data-index='0' bindtap='switchTabbar'>密码验证</view>
+      <view id='nav-tabb-item__1' class='nav-tab-item {{tabbarIndex == 1 ? "nav-tab-item-sel" : ""}}' data-index='1' bindtap='switchTabbar'>短信验证</view>
+
+
+
+      <view class="nav-tab-line {{!animate ? 'tab__line--animate' : 'tab__line--animate'}}" style="left:{{move}}%; width: {{width}}%;">
+        <view class='nav-tab-line-data'></view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <swiper current="{{currentTab}}" class="swiper" duration="300"  bindchange="bindChange">
+    <swiper-item class='swiper-item'>
+      <view><pass-check bindshowToast='show'></pass-check></view>
+    </swiper-item>
+    <swiper-item>
+      <message-check/>
+    </swiper-item>
+
+  </swiper>
+</view>

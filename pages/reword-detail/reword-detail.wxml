@@ -1,0 +1,37 @@
+<!--pages/reword-detail/reword-detail.wxml-->
+<include src="/templates/include.wxml" />
+<import src="../../utils/wxParse/wxParse.wxml" />
+<container loading="{{firstLoading}}">
+  <view class='banner-container'>
+    <swiper class='banner-container' autoplay='{{true}}' circular='{{true}}' duration='350' indicator-dots='{{bannerList.length > 1}}'>
+      <swiper-item class="banner-container" wx:for="{{bannerList}}" wx:key="{{index}}">
+        <image-view data-index='{{index}}' bindimgtap="onBannerImgTap" width="100%" height="600rpx" src="{{item}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+   <view class="goods-detail-title">
+      <view class="bar"></view>
+      <view class='title'>{{detail.name}}</view>
+      <view class="icon">
+           <price class="price" value="{{detail.price}}" />
+      </view>
+    </view>
+    <view class='wxParse-content'>
+    <template is="wxParse" data="{{wxParseData:insertData.nodes}}" />
+  </view>
+     <view class="goods-footer">
+      <view class="btn-box ">
+        <view class="btn-right"
+             bindtap='addCart'>
+          加入心愿单
+        </view>
+      </view>
+      <view class="btn-box">
+        <view class="btn"
+             bindtap='rightChange'>
+          立即兑换
+        </view>
+      </view>
+
+    </view>
+</container>

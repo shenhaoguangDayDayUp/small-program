@@ -1,0 +1,71 @@
+/* components/goods-item/goods-items.wxss */
+.rigth-item {
+  color: white;
+  padding-top:30rpx;
+  padding-right: 22rpx; 
+  padding-left: 22rpx; 
+  height: 271rpx;
+  width: 100%;
+  background: #2a2d36;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 33rpx; 
+    
+}
+.rigth-item  .right-img {
+        margin-right:30rpx;
+        width: 198rpx;
+        height: 198rpx;
+}
+ .rigth-item .right-img image{
+       width: 100%;
+        height: 100%;
+   }
+    .rigth-item .left-content{
+        font-size: 27rpx;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 198rpx;
+        padding-right: 26rpx
+        }
+ .left-content .price-box{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 35rpx;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            }
+             .left-content .content-title{
+               line-height: 40rpx;
+             }
+     .left-content .price-box  .price-left{
+                flex: 1;
+                line-height: 36rpx;
+                vertical-align: middle;
+                display: flex;
+                }
+
+   .left-content .price-box  .price-left  image{
+                    height: 34rpx;
+                     width: 34rpx;
+                        vertical-align: middle;
+                }
+
+ .left-content .price-box  .price-left .price{
+                    color: #ffcb16;
+                    font-size: 36rpx;
+                  vertical-align: middle;
+                }
+
+
+      .price-box .price-quntity{
+                 flex: 1;
+                 text-align: right;
+                 font-size: 34rrpx;
+            }

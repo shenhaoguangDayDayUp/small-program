@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "奖品详情",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "image-view": "/components/image-view/index",
+    "price": "/components/price/index"
+  }
+}

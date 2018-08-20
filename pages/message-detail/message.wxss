@@ -1,0 +1,37 @@
+/* pages/message-detail/message.wxss */
+.m_d_c{
+  width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 150rpx;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #2a2d36;
+  color: white;
+  align-content: center
+
+}
+.m_d_t{
+  box-sizing: border-box;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1rpx solid #323540;
+  width: 100%;
+  flex: 1;
+}
+.m_d_b{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+   width: 100%;
+   flex: 1;
+     padding-right: 20rpx;
+  padding-left: 20rpx;
+}
+.m_d_time{
+  margin-right: 10rpx;
+}

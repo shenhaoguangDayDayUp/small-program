@@ -1,0 +1,24 @@
+<!--pages/set-conver-pass/set-conver-pass.wxml-->
+<include src="/templates/include.wxml" />
+<!--pages/nick-name/nick-name.wxml-->
+
+<view class='nick_name_container'>
+ <form   bindsubmit="submitForm">
+    <view class="inputView">
+      <view class='alert' wx:if='{{rule.password.show}}'>
+        <image class='tip' src='/images/img/tishi@2x.png'></image>
+        <view class='tip-content'>{{rule.password.message}}</view>
+      </view>
+      <input value='{{form.password}}' class="inputText" name='password' password='{{isPassword}}'  placeholder="请输入登录密码" bindblur='nicknameBlur' bindinput="nicknameInput" />
+    </view>
+
+  
+
+          <button disabled='{{disabled}}' class="login-btn {{!disabled ? 'btn-active':''}}"  formType="submit">下一步</button>
+      
+
+  </form>
+  <payment close='close' bindpasend='passend' payTitle='{{payTitle}}' isPay='{{show}}'></payment>
+
+</view>
+ 

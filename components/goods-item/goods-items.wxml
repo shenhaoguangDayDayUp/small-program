@@ -1,0 +1,22 @@
+<!--components/goods-item/goods-items.wxml-->
+ <view class="rigth-item">
+         <view class="right-img">
+              <image src="{{item.product.imagePath}}" alt=""></image> 
+         </view>
+         <view class="left-content">
+             <view class="content-title">
+                 {{item.product.name}}
+             </view>
+              <view class="price-box">
+                    <view class="price-left">
+                           <!-- <image src='/images/img/big_gold@2x.png'></image>
+                     <view class='price'>{{item.product.price}}</view> -->
+                                                         <price   class="price" value="{{item.product.price}}" />
+                     <view class="price-quntity">
+                         x{{item.quantity}}
+                    </view>
+                         
+                </view>
+              </view>
+         </view>
+    </view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "奖品中心",
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+      "container": "/components/first-loading/index",
+      "image-view": "/components/image-view/index",
+       "price": "/components/price/index"
+    },
+      "enablePullDownRefresh": true
+}

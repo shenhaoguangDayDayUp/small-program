@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "会员信息",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "message": "/components/message/index"
+  }
+}

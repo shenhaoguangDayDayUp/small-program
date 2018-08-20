@@ -1,0 +1,28 @@
+<!--templates/dialog/dialog.wxml-->
+<template name="dialog">
+    <view  catchtouchmove='preventD' hidden="{{ !visible }}" class='weui-mask weui-mask_transparent {{visible?"hiddenScroll":""}}'  ></view>
+  
+   <view catchtouchmove='preventD' class="my-dialog weui-dialog-wrapper {{visible?'hiddenScroll':''}} {{animateCss}} " hidden="{{ !visible }}">
+        <view class="title">
+          <view>{{title}}</view>
+          <!-- <span class="title-icon"
+                          @click='showToast = false'>
+                        <img src="../../assets/img/close1.png"
+                             alt="">
+                    </span> -->
+        </view>
+        <!-- <slot  name='header'></slot> -->
+        <view class="content">
+          {{content}}
+          <!-- <slot  name='content'></slot> -->
+        </view>
+        <view class='bottom'>
+          <view class="left"
+               bindtap='onCancel'>{{leftBtnText}}</view>
+          <view class="right"
+               bindtap='onConfirm'>{{rightBtnText}}</view>
+        </view>
+      </view>
+</template>
+
+

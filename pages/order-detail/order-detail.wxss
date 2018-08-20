@@ -1,0 +1,78 @@
+/* pages/convert/convert.wxss */
+ .order {
+   color: white;
+    margin-top: 22rpx;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    display: flex;
+    flex-direction: column;
+    height: 287rpx;
+    padding-top: 68rpx;
+    padding-bottom: 68rpx;
+    padding-right: 30rpx;
+    border-bottom: 1rpx solid #323540;
+    background: #2a2d36;
+ 
+  }
+   .order  .right-price-box {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+
+         .order  .right-price-box .price{
+
+         }
+ .order  .right-price-box  .score {
+        text-align: right;
+        margin-left: 20rpx;
+        min-width: 150rpx;
+        display:flex;
+flex-direction:row;
+justify-content:flex-end;
+align-content:center}
+       .order  .right-price-box  .color-gold {
+        color: #ffcb16;
+      }
+         .order  .right-price-box  .score image{
+            width: 34rpx;
+          height: 34rpx;
+          margin-right: 5rpx;
+         }
+
+ .submit-box {
+    height: 120rpx;
+    padding-top: 21rpx;
+    padding-right: 18rpx;
+    padding-left: 18rpx;
+    padding-bottom: 21rpx;
+    box-sizing: content-box;
+    display: flex;
+     font-size: 32rpx;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+   .submit-box .submit-btn{
+          flex: 1;
+      line-height: 78rpx;
+      height: 78rpx;
+      background: #ffcb16;
+      border-radius: 10rpx;
+      text-align: center;
+      color: #000;
+   }
+    .submit-box .submit-cancel{
+  width: 230rpx;
+      line-height: 78rpx;
+      height: 78rpx;
+      background: #d3d3d3;
+      border-radius: 10rpx;
+      text-align: center;
+      color: #000;
+      margin-right: 26rpx;
+    }

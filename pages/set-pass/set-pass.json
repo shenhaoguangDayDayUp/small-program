@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "设置密码",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "normal-cell-item": "/components/normal-cell-item/index"    
+  }
+}

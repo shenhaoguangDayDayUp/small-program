@@ -1,0 +1,41 @@
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+  <address show="{{show}}" item='{{defaultAddress}}'></address>
+  <block wx:for="{{goodsItem}}" wx:key='{{index}}'>
+   <goods-item item='{{item}}'></goods-item > 
+  </block> 
+
+      <view class="order">
+            <view class="right-price-box">
+                <view class="price">奖品小计:</view>
+                <view class="score">
+                      <!-- <image src="/images/img/big_gold@2x.png"></image> 
+                 <view>{{detail.itemsSubtotal}}</view>  -->
+                                    <price active="{{false}}"  class="price" value="{{detail.itemsSubtotal}}" />
+                  </view>
+            </view>
+            <view class="right-price-box">
+                <view class="price">快递费用:</view>
+                <view class="score">
+                                                 <price active="{{false}}"  class="price" value="{{detail.deliveryFee}}" />
+                    <!-- <image src="/images/img/big_gold@2x.png"></image> 
+                 <view>{{detail.deliveryFee}}</view>  -->
+                  </view>
+            </view>
+            <view class="right-price-box">
+                <view class="price">订单合计:</view>
+                <view class="score color-gold">
+                                          <price   class="price" value="{{detail.grandTotal}}" />
+                     <!-- <image src="/images/img/big_gold@2x.png"></image>  
+                        <view>{{detail.grandTotal}}</view>   -->
+                          </view>
+            </view>
+        </view> 
+         <!-- <view class="submit-box"
+         wx:if='{{detail.status =="REQUEST"}}'>
+      <view class="submit-cancel"
+           bindtap='gotoCancel'>取消</view>
+      <view class="submit-btn"
+           bindtap='gotoPayment'>支付</view>
+    </view> -->
+</container>

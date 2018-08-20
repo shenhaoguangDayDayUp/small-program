@@ -1,0 +1,24 @@
+<!--components/address/address.wxml-->
+  <view class="change-address"   bindtap='gotoDetail'
+     >
+    <view class="receive">
+      <view class='title'>收货人:</view>
+      <view class='name'>{{item.name}}</view>
+    </view>
+    <view class="tel">
+      {{item.mobileNumber}}
+    </view>
+    <view class="receive-detail">
+      <!-- <view class="address"> -->
+      <view class='receive-detail-title'>
+     <view> 详细地址:{{item.province}}{{item.city}}{{item.district}}{{item.street}}
+     </view>
+      </view>
+      <!-- </view> -->
+      <view class="right-img"
+           wx:if='{{show}}'>
+    
+        <view class="right-arrow "></view>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "设置兑换密码",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "normal-cell-item": "/components/normal-cell-item/index",
+      "payment": "/components/payment/index"
+  }
+}

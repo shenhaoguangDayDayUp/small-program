@@ -1,0 +1,18 @@
+<!-- Toast start -->
+ <import src='/templates/toast/index.wxml'/>
+<template is='hd_toast' data='{{..._toast_}}'/> 
+<!-- Toast end -->
+<!-- Loading start -->
+ <import src='/templates/loading/loading.wxml'/>
+<template is="loading" data="{{ ...$wux.loading }}"/> 
+
+<!-- Loading end -->
+<!-- Toptips start -->
+<import src='/templates/toptips/toptips.wxml'/>
+<template is="toptips" data="{{ ...$wux.toptips }}"/>
+
+ <import src='/templates/dialog/dialog.wxml'/>
+  <template is="dialog" data="{{ ...$wux.dialog }}"/> 
+<import src='/templates/loadmore/index.wxml'/>
+<!-- Toptips end -->
+ <!-- <view class='dsy-navigator-line'></view>  -->

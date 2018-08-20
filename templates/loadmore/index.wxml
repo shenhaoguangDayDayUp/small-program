@@ -1,0 +1,14 @@
+<template name="loadmore">
+  <view class='sd__load__more' wx:if="{{loading}}">
+    <view class="weui-loading"></view>
+    <view class=''>正在加载中...</view>
+  </view>
+  <view class='sd__load__more' wx:elif="{{nodata}}">
+    <view class='sd__load__more__text'>暂无数据</view>
+    <view class='sd__load__more-line'></view>
+  </view>
+  <view class='sd__load__more' wx:elif="{{nomore}}">
+   <view class='sd__load__more-nomore'>我是有底线的</view>
+  </view>
+  <view class='sd__load__more' wx:else></view>
+</template>

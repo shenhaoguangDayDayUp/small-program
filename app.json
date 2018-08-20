@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/reward/reward",
+    "pages/game/game",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/reword-detail/reword-detail",
+    "pages/login/login",
+    "pages/heart/heart",
+    "pages/convert/convert",
+    "pages/order/order-list",
+    "pages/order-detail/order-detail",
+    "pages/recharge/recharge",
+    "pages/change-detail/change-detail",
+    "pages/main-detail/main-detail",
+    "pages/nick-name/nick-name",
+    "pages/register/register",
+    "pages/forget-password/forget-password",
+    "pages/receive-address/receive-address",
+    "pages/add-address/add-address",
+    "pages/set-pass/set-pass",
+    "pages/set-conver-pass/set-conver-pass",
+    "pages/set-rest-pass/set-rest-pass",
+    "pages/message/message",
+    "pages/message-detail/message",
+    "pages/address-list/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "长影娱乐",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#23262b"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ffcb16",
+    "backgroundColor": "#2f323b",
+    "list": [
+      {
+        "pagePath": "pages/game/game",
+        "text": "游戏厅",
+        "iconPath": "/images/img/youxiting.png",
+        "selectedIconPath": "/images/img/youxiting2.png"
+      },
+      {
+        "pagePath": "pages/reward/reward",
+        "text": "奖品城",
+        "iconPath": "/images/img/jiangpincheng.png",
+        "selectedIconPath": "/images/img/jiangpincheng2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/img/wode.png",
+        "selectedIconPath": "/images/img/wode2.png"
+      }
+    ]
+  },
+  "debug": false
+}

@@ -1,0 +1,4 @@
+/* pages/set-pass/set-pass.wxss */
+.m-t-20{
+  margin-top:20rpx;
+}

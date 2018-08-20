@@ -1,0 +1,34 @@
+.sd__price__content {
+  /* display: inline-block; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sd__price-tips {
+  margin-right: 6rpx;
+  line-height: 1.0;
+  /* display: inline-block; */
+}
+.sd__price-count {
+  line-height: 1.0;
+  /* display: inline-block; */
+  color: #ffcb16;
+  font-size: 30rpx;
+}
+.sd__price-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+.icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+activeColor{
+  color: white;
+    line-height: 1.0;
+  font-size: 30rpx;
+}

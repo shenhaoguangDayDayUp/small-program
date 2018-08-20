@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "修改昵称",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index",
+    "image-view": "/components/image-view/index",
+    "price": "/components/price/index",
+    "table-view-cell": "/components/table-view-cell/index",
+    "quntity": "/components/quntity/index"
+  }
+}

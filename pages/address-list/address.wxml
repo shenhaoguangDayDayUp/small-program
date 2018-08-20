@@ -1,0 +1,11 @@
+
+<!--pages/receive-address/receive-address.wxml-->
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+  <block wx:for="{{list}}" wx:key="index" >
+    <receive-address bindselectEdit='selectEdit' bindgotoEdit='gotoEdit' binddeleteDefault='deleteAddress'
+ bindsetDefault='setDefault' item="{{item}}" ></receive-address > 
+    </block>
+    <button class='addbtn' bindtap='addAddress'>添加地址</button>
+
+</container>

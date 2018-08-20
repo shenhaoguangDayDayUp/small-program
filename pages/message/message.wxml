@@ -1,0 +1,9 @@
+<!--pages/message/message.wxml-->
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+
+  <block wx:for='{{list}}' wx:key='{{index}}'>
+    <message item='{{item}}' data-index="{{item.code}}" bindtap='gotoDetail'></message>
+  </block>
+  <template is="loadmore" data="{{loading:isLoading, nomore: !hasMore, nodata: !hasData}}" />
+</container>

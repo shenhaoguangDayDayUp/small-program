@@ -1,0 +1,43 @@
+<!--pages/game/game.wxml-->
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+
+    <image-view height="300rpx" url='/images/img/banner.png'></image-view>
+    <view class='game-container'>
+      <view class='title-bar' style='margin-top:20rpx'> 
+        <view class='bar'></view> 
+         <view class='title'>为您推荐</view> 
+      </view>
+      <view class='list-container'>
+         <block wx:for='{{recommond}}' wx:key='{{index}}'>
+        <view class='game-item'>
+            <view class='item'>
+               <image-view height="200rpx" src='{{item.icon}}' ></image-view>
+            </view>
+             <view class='item-name'>{{item.name}}</view>
+        </view>
+      </block>
+      </view>
+      <view class='title-bar'> 
+        <view class='bar'></view> 
+         <view class='title'>全部游戏</view> 
+      </view>
+
+       <view class='list-container'>
+         <block wx:for='{{list}}' wx:key='{{index}}'>
+        <view class='game-item'>
+            <view class='item'>
+               <image-view height="200rpx" src='{{item.icon}}' ></image-view>
+            </view>
+             <view class='item-name'>{{item.name}}</view>
+        </view>
+      </block>
+                     <template is="loadmore" data="{{loading:isLoading, nomore: !hasMore, nodata: !hasData}}"/>      
+      </view>
+   
+      <view>
+      </view>
+
+    </view>
+  
+</container>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "会员注册",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "container": "/components/first-loading/index"
+  }
+}

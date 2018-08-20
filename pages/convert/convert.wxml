@@ -1,0 +1,41 @@
+<include src="/templates/include.wxml" />
+<container loading="{{firstLoading}}">
+  <address bindaddress='gotoAddress' item='{{defaultAddress}}'></address>
+  <block wx:for="{{goodsItem}}" wx:key='{{index}}'>
+   <goods-item item='{{item}}'></goods-item > 
+  </block> 
+
+      <view class="order">
+            <view class="right-price-box">
+                <view class="price">奖品小计:</view>
+                <view class="score">
+                           <price active='{{false}}' class="price" value="{{detail.itemsSubtotal}}" />
+
+                      <!-- <image src="/images/img/big_gold@2x.png"></image> 
+                      
+                 <view>{{detail.itemsSubtotal}}</view> -->
+                   </view>  
+            </view>
+            <view class="right-price-box">
+                <view class="price">快递费用:</view>
+                <view class="score">
+                    <!-- <image src="/images/img/big_gold@2x.png"></image> 
+                 <view>{{detail.deliveryFee}}</view>  -->
+                                <price active='{{false}}' class="price" value="{{detail.deliveryFee}}" />
+                 
+                  </view>
+            </view>
+            <view class="right-price-box">
+                <view class="price">订单合计:</view>
+                <view class="score color-gold">
+                     <!-- <image src="/images/img/big_gold@2x.png"></image>  
+                        <view>{{detail.grandTotal}}</view>   -->
+                                                 <price  class="price" value="{{detail.grandTotal}}" />
+                          </view>
+            </view>
+        </view> 
+           <view class="{{defaultAddress?'submit-box':'submit-box-disabled'}}">
+            <view class="{{defaultAddress?'submit-btn':'submit-btn-disabled'}}" 
+                 bindtap='gotoSubmit'>提交</view>
+        </view> 
+</container>

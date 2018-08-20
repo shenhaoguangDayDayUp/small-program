@@ -1,0 +1,99 @@
+<!--pages/mine/mine.wxml-->
+<include src="/templates/include.wxml" />
+<wxs module="util">
+  function map(mobile) {
+  var number = mobile+'';
+  var reg = getRegExp("(\d{3})\d{4}(\d{4})", "g");  
+  var numbers =  number.replace(reg, "$1****$2");
+    return numbers; 
+  }
+  function getUrl(url){
+    console
+  }
+
+  module.exports = {
+    map: map,
+    getUrl:getUrl
+  }
+</wxs>
+
+<container loading="{{firstLoading}}">
+  <view class='mine-header-container'>
+    <view class='left-container'>
+      <image-view width='150rpx' height='150rpx' bindtap="onBannerImgTap" wx:if='{{!userInfo}}' class='mine-header-img' src='' url="/images/img/touxiang2@2x.png"></image-view>
+         <image-view width='150rpx' height='150rpx' bindtap="onBannerImgTap"  wx:else class='mine-header-img' src="{{userInfo.avatar}}"></image-view> 
+      <view class='mine-header-login-user' wx:if='{{userInfo}}'>
+        <view> {{userInfo.name}} </view>
+        <view> {{util.map(userInfo.mobileNumber)}} </view>
+      </view>
+      <view class='mine-header-user' wx:else>
+        <text>请登录</text>
+      </view>
+    </view>
+    <view class='right-container'>
+      <view bindtap="onBannerImgTap" class='right-arrow' src="/images/img/touxiang2@2x.png"></view>
+    </view>
+  </view>
+  <view class='mine-score-container'>
+    <view class='mine-score-header'>
+      <view class='bar'></view>
+      <view class='header-text'>积分信息</view>
+    </view>
+    <view class='mine-score-content'>
+      <view class='item'>
+      
+      <view class='item-title'  wx:if='{{user.amount}}'>{{user.amount}}</view>
+         <image wx:else class='item-image' src='/images/img/chongzhi.png'></image> 
+        <view >余额</view>
+
+      </view>
+      <view class='item' bindtap='gotoRecharge'>
+        <image class='item-image' src='/images/img/chongzhi.png'></image>
+        <view>在线充值</view>
+      </view>
+      <view class='item' bindtap='gotoChange'>
+        <image class='item-image' src='/images/img/jiaoyimingxi.png'></image>
+        <view>交易明细</view>
+      </view>
+    </view>
+  </view>
+  <view class='mine-score-container'>
+    <view class='mine-score-header'>
+      <view class='bar'></view>
+      <view class='header-text'>兑换信息</view>
+    </view>
+    <view class='mine-score-content'>
+      <view class='item' bindtap='gotoHeart'>
+        <image class='item-image' src='/images/img/xinyuandan.png'></image>
+        <view>心愿单</view>
+      </view>
+      <view class='item' bindtap='gotoOrder' data-index='0'>
+        <image class='item-image' src='/images/img/daifukuan.png'></image>
+        <view>待付款</view>
+      </view>
+      <view class='item' bindtap='gotoOrder' data-index='1'>
+        <image class='item-image' src='/images/img/daishouhuo.png'></image>
+        <view>待收货</view>
+      </view>
+    </view>
+  </view>
+
+   <view class='mine-score-container'>
+    <view class='mine-score-header'>
+      <view class='bar'></view>
+      <view class='header-text'>其他</view>
+    </view>
+    <view class='mine-score-content'>
+      <view class='item' bindtap='gotoNews'>
+        <image class='item-image' src='/images/img/xinyuandan.png'></image>
+        <view>消息</view>
+      </view>
+      <view class='item' bindtap='gotoOrder' data-index='0'>
+        
+      </view>
+      <view class='item' bindtap='gotoOrder' data-index='1'>
+   
+      </view>
+    </view>
+  </view>
+</container>

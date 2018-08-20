@@ -1,0 +1,21 @@
+<!--pages/nick-name/nick-name.wxml-->
+
+<view class='nick_name_container'>
+ <form   bindsubmit="submitForm">
+    <view class="inputView">
+      <view class='alert' wx:if='{{rule.nickname.show}}'>
+        <image class='tip' src='/images/img/tishi@2x.png'></image>
+        <view class='tip-content'>{{rule.nickname.message}}</view>
+      </view>
+      <input name='nickname' value='{{form.nickname}}' class="inputText" placeholder="请输入用户昵称" bindblur='nicknameBlur' bindinput="nicknameInput" />
+    </view>
+
+  
+
+          <button disabled='{{disabled}}' class="login-btn {{!disabled ? 'btn-active':''}}"  formType="submit">保存</button>
+      
+
+  </form>
+
+</view>
+ 

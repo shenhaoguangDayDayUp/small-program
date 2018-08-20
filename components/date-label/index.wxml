@@ -1,0 +1,3 @@
+<!--components/date-label/index.wxml-->
+{{value}}
+

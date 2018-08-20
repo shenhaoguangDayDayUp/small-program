@@ -1,0 +1,61 @@
+<!--components/payment/index.wxml-->
+<view class="pay-box" wx:if="{{isPay}}" ref="input">
+  <view class="my-dialog">
+    <view class="title" slot="header">
+      {{payTitle}}
+      <!-- <slot  name='header'></slot> -->
+      <view class="title-icon" bindtap='close'>
+        <image src="/images/img/close1.png" alt="" />
+      </view>
+    </view>
+    <view class="content">
+      <!-- 支付金额:100 -->
+      <slot name='content'></slot>
+    </view>
+    <!-- <view class='bottom'>
+                    <view class="left"
+                         @click='gotoCancel'>取消
+                    </view>
+                    <view class="right"
+                         @click='gotoConfirm'>确定
+                    </view>
+                </view> -->
+    <view class="pas-box v-1px">
+
+      <block wx:for='{{pasDigits}}' wx:key='index'>
+        <view class='{{index>0?"v-1px-l":""}}'>
+          <input type="password" value="{{val[index]}}" disabled />
+        </view>
+
+      </block>
+
+    </view>
+  </view>
+  <!-- <transition v-on:before-enter="beforeEnter"> -->
+  <view class="box-container" wx:if="{{isPay}}">
+    <!--keyboard-->
+    <view class="key-box" wx:if="{{isPay}}">
+      <view class="item v-1px-t" wx:for-index='i' wx:for-item='item' wx:for="{{keyList}}" wx:key="{{i}}">
+        <view class="key" hover-class='sd__normal__cell__item-hover' hover-stay-time='250' wx:for='{{item}}' wx:for-index='key' wx:for-item='val' wx:key="{{key}}" data-index='{{val}}' bindtap="inputStart" bindtouchend="inputEnd" class="{key!=0?'v-1px-l':''}">
+          {{val}}
+        </view>
+      </view>
+      <view class="item v-1px-t">
+        <view class="key  " style="background: #e8e8e8"></view>
+        <view class="key v-1px-l" bindtap="inputStart(0, $event)" bindtouchend="inputEnd($event)">0
+        </view>
+        <view hover-class='sd__normal__cell__item-hover' hover-stay-time='250' class="key v-1px-l" style="background: #e8e8e8" bindtap="del" bindtouchend="inputEnd">
+          <image class="delete-img" src="/images/img/delete1.png" alt="" />
+        </view>
+      </view>
+    </view>
+    <view style="text-align: center;" wx:show='paySuc'>
+      <slot name='pay-status'>
+        {{payStatusText}}
+      </slot>
+    </view>
+    <!-- 密码输入完毕动画 -->
+
+  </view>
+  <!-- </transition> -->
+</view>

@@ -1,0 +1,36 @@
+<!--pages/recharge/recharge.wxml-->
+<container loading="{{firstLoading}}">
+  <view class="contents">
+      <view class="price">
+        <view class="price-bar"></view>
+        <view class="title">请选择购买金额</view>
+      </view>
+       <view class="price-list">
+        <view bindtap='priceClick'
+            wx:for="{{priceList}}"
+            data-index="{{index}}"
+             wx:for-item="items"
+             class="item {{items.selected?'item-active':''}}"
+             wx:key='{{index}}'>{{items.price }}元</view>
+      </view> 
+        <view class="price">
+        <view class="price-bar"></view>
+        <view class="title">请选择支付方式</view>
+      </view> 
+      <view class="price-list">
+        <view bindtap='payClick'
+         data-index="{{index}}"
+             wx:for="{{payList}}"
+              wx:for-item="items"
+             class=" item-pay {{items.selected?'item-pay-active':''}}"
+             wx:key='{{index}}'>{{items.title }}</view>
+      </view>
+      <view class="next"
+           bindtap='gotoCharge'>
+        <view class="btn">下一步</view>
+      </view> 
+    </view>
+
+
+
+</container>
