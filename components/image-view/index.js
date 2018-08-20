@@ -36,9 +36,13 @@ Component({
       type:[String],
       default:"",
       observer: function (newValue, oldValue) {
-        console.log(newValue)
+        let imageSrc = newValue;
+        if (!imageSrc) {
+          return;
+        }
+          imageSrc = `${BaseURL}${imageSrc}`;
         this.setData({
-          imageSrc: newValue,
+          imageSrc: imageSrc,
         });
       }
     }

@@ -3,55 +3,56 @@
 
 <container loading="{{firstLoading}}">
   <view class='product-view'>
-     <block wx:for="{{dataList}}" wx:key="index">
-      <table-view-cell
-       index="{{index}}" 
-       class='cmp_cell'
-        bindcellwillediting="onCellWillEdting"
-        bindcellwilldelete="onCellWillDelete"
-        bindcelldidtap="onCellTap">
+    <block wx:for="{{dataList}}" wx:key="index">
+      <table-view-cell index="{{index}}" class='cmp_cell' bindcellwillediting="onCellWillEdting" bindcellwilldelete="onCellWillDelete" bindcelldidtap="onCellTap">
 
-      <view class='cart-item'>
-         <view class='cart-radio' data-index='{{index}}' catchtap='checkRadio'>
-          <image src='{{item.isSelected ? "/images/img/fuxuan@1x.png":"/images/img/juxing@1x.png"}}'></image>
-        </view>
+        <view class='cart-item'>
+           <view class='cart-radio' data-index='{{index}}' catchtap='checkRadio'>
+            <image src='{{item.isSelected ? "/images/img/fuxuan@1x.png":"/images/img/juxing@1x.png"}}'></image>
+          </view> 
           <view class='cart-right'>
-          <view class='cart-icon'>
-            <image-view width="156rpx" height="156rpx" src="{{item.product.imagePath}}" />
+             <view class='cart-icon'>
+              <image-view width="156rpx" height="156rpx" src="{{item.product.imagePath}}" />
+            </view> 
+           
+             <view class='cart-right-right'>
+              <view class='cart-title line_3'>{{item.product.name}}</view> 
+              <view class='cart-price'>
+                <view class='cart_caculate'>
+              
+                     <price class='cart_price'  value="{{item.product.price}}" /> 
+                     <view class='cart_quntity'>
+                    <quntity value="{{item.quantity}}" index="{{index}}" bindvaluechange="onQuantityCange" />
+                     </view>
+                      <!--     -->
+                  </view>
+              </view> 
+                 <!-- <view class='goods-quantity_content'>
+             
+            </view>  -->
+             </view> 
+         
           </view>
-           <view class='cart-right-right'>
-            <view class='cart-title line_3'>{{item.product.name}}</view>
-          <!-- <view class='cart-sub_title'>{{item.product.name}}</view> -->
-            <view class='cart-price'>
-              <price value="{{item.product.price}}"/>
-            </view>
-          </view>
-             <view class='goods-quantity_content'>
-          <quntity value="{{item.quantity}}" index="{{index}}" bindvaluechange="onQuantityCange"/>
-        </view> 
         </view>
-      </view>
-      </table-view-cell >
+      </table-view-cell>
     </block>
   </view>
- 
 
-    <view class="footer-bar">
-        <view class="select-all-img" catchtap='selectClick'>
-             <image wx:if='{{allSelected}}'  src="/images/img/fuxuan2@1x.png"
-                 alt=""></image> 
-        <image wx:elif='{{!allSelected}}' src="/images/img/yuan@1x.png"
-                 alt=""></image>
-        </view> 
-        <view class="select-all-quntity">
-            共
-            <view>{{amount}}</view>件,
-        </view>
-        <view class="select-all-score">
-            <view>{{totalPrice}}</view>
-        </view>
-        <view catchtap='gotoChange' class="{{amount?'select-all-button':'select-all-button-disabled'}}">
-            <view class="{{amount?'select-all-pay':'select-all-pay-disabled'}}" >兑换</view>
-        </view>
+
+  <view class="footer-bar">
+    <view class="select-all-img" catchtap='selectClick'>
+      <image wx:if='{{allSelected}}' src="/images/img/fuxuan2@1x.png" alt=""></image>
+      <image wx:elif='{{!allSelected}}' src="/images/img/yuan@1x.png" alt=""></image>
     </view>
+    <view class="select-all-quntity">
+      共
+      <view>{{amount}}</view>件,
+    </view>
+    <view class="select-all-score">
+      <view>{{totalPrice}}</view>
+    </view>
+    <view catchtap='gotoChange' class="{{amount?'select-all-button':'select-all-button-disabled'}}">
+      <view class="{{amount?'select-all-pay':'select-all-pay-disabled'}}">兑换</view>
+    </view>
+  </view>
 </container>

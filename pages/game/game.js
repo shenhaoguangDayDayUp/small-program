@@ -15,7 +15,9 @@ Page({
     isLoading: false,
     hasMore: true,
     hasData: true,
-    list:[]
+    list:[],
+    bannerList:[]
+    
   },
 
   /**
@@ -24,6 +26,7 @@ Page({
   onLoad: function (options) {
     this.getRecommond()
     this.getList()
+    this.getBanner()
   },
 
   /**
@@ -82,6 +85,19 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  getBanner() {
+    ajax('marketing/banners/MOBILE_STORE').get().then(res => {
+      this.setData({ firstLoading: false })
+      // var imgPrifex = config.imgUrl[config.env.NODE_ENV]
+      // var bannerList = res.split(',').map(item => {
+      //   return item
+      // })
+      this.setData({ bannerList: res })
+ 
+    }).then(res => {
+   
+    })
   },
   getList() {
     if (this.data.isLoading || (this.data.page != 1 && !this.data.hasMore) || (this.data.page != 1 && !this.data.hasData)) {

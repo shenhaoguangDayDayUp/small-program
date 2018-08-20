@@ -12,12 +12,14 @@
   align-items: flex-start;
   flex-wrap: wrap;
   font-size: 33rpx; 
+  box-sizing: border-box;
     
 }
 .rigth-item  .right-img {
         margin-right:30rpx;
         width: 198rpx;
         height: 198rpx;
+         box-sizing: border-box;
 }
  .rigth-item .right-img image{
        width: 100%;
@@ -30,7 +32,8 @@
         flex-direction: column;
         position: relative;
         height: 198rpx;
-        padding-right: 26rpx
+        padding-right: 26rpx;
+         box-sizing: border-box;
         }
  .left-content .price-box{
             display: flex;
@@ -40,6 +43,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
+             box-sizing: border-box;
             }
              .left-content .content-title{
                line-height: 40rpx;

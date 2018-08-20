@@ -4,7 +4,6 @@
 │   app.js     
 │   app.json   
 │   app.wxss  
-│   app.wxss  
 └───components 组件
 │               
 │              

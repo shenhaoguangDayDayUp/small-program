@@ -1,8 +1,15 @@
 <!--pages/game/game.wxml-->
 <include src="/templates/include.wxml" />
 <container loading="{{firstLoading}}">
+  <view class='banner-container'>
+    <swiper class='banner-container' autoplay='{{true}}' circular='{{true}}' duration='350' indicator-dots='{{bannerList.length > 1}}'>
+      <swiper-item class="banner-container" wx:for="{{bannerList}}" wx:key="{{index}}">
+        <image-view data-index='{{index}}' bindimgtap="onBannerImgTap" width="100%" height="438rpx"  url='{{item.image}}' />
+      </swiper-item>
+    </swiper>
+  </view>
 
-    <image-view height="300rpx" url='/images/img/banner.png'></image-view>
+    <!-- <image-view height="300rpx" url='/images/img/banner.png'></image-view> -->
     <view class='game-container'>
       <view class='title-bar' style='margin-top:20rpx'> 
         <view class='bar'></view> 
@@ -14,7 +21,7 @@
             <view class='item'>
                <image-view height="200rpx" src='{{item.icon}}' ></image-view>
             </view>
-             <view class='item-name'>{{item.name}}</view>
+             <view class='item-name line_1 '>{{item.name}}</view>
         </view>
       </block>
       </view>

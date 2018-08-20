@@ -139,14 +139,13 @@ Page({
     })
   },
   getBanner() {
-  
-    ajax('/store/product/list/banner').get().then(res=>{
+    ajax('marketing/banners/MOBILE_STORE').get().then(res=>{
         this.setData({ firstLoading: false })
       // var imgPrifex = config.imgUrl[config.env.NODE_ENV]
-      var bannerList = res.split(',').map(item => {
-        return item
-      })
-      this.setData({ bannerList: bannerList})
+      // var bannerList = res.split(',').map(item => {
+      //   return item
+      // })
+        this.setData({ bannerList: res})
       return ajax('store/product/list/recommendation').get(); 
       // this.show('1111')
     }).then(res=>{

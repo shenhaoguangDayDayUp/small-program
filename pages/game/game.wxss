@@ -4,6 +4,8 @@
   /* padding: 35rpx 20rpx 0 20rpx; */
   color: white;
   font-size: 28rpx;
+    box-sizing: border-box;
+
 }
 .title-bar{
  padding: 35rpx 20rpx 0 20rpx;
@@ -12,12 +14,15 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+    box-sizing: border-box;
+
 }
 .title-bar .bar{
   width: 5rpx;
   height: 35rpx;
   background: #ffcb16;
   margin-right: 10rpx;
+    box-sizing: border-box;
 }
 .list-container{
   display: flex;
@@ -32,16 +37,30 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 260rpx;
+  height: 270rpx;
 }
 .game-item .item{
   width: 200rpx;
   height: 200rpx;
   padding-top: 20rpx;
+    box-sizing: border-box;
+ 
 }
 .game-item .item-name{
-  margin-top: 20rpx;
+  margin-top: 40rpx;
   height: 30rpx;
   width: 150rpx;
-  text-align: center
+  text-align: center;
+  box-sizing: border-box;
+  overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+word-wrap:normal;
+
+}
+.banner-container {
+  width: 100%;
+  height: 438rpx;
+  background-color: #e2e2e2;
+  position: relative;
 }
