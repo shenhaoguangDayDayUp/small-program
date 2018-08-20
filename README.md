@@ -4,16 +4,19 @@
 │   app.js     
 │   app.json   
 │   app.wxss  
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
-│   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
+│   app.wxss  
+└───components 组件
+│               
+│              
 │   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───images 图片
+│   
+│   
+└───pages  页面
+│   
+│   
+└───templates  模板
+│   
+│   
+└───utils  工具
 ```
