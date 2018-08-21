@@ -38,7 +38,7 @@
   </view>
   <normal-cell-item title="手机号" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{util.map(user.mobileNumber)}}'>
   </normal-cell-item>
-  <normal-cell-item title="手机号" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{util.idCard(user.idCardNumber)}}'>
+  <normal-cell-item title="身份证号" hideline="{{false}}" bindtap="gotoNext"  hidearrow='{{true}}' content='{{util.idCard(user.idCardNumber)}}'>
   </normal-cell-item>
   <view class='m-t-20'>
     <normal-cell-item title="收货地址" hideline="{{false}}" bindtap="gotoNext" data-index="2">
