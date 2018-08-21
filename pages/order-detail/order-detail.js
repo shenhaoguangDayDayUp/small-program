@@ -101,14 +101,13 @@ Page({
     ajax('store/order/redeem/{code}', this.data.code.code).paramters(form).put().then(res => {
       this.show('购买成功')
       wx.switchTab('../reward/reward')
-      this.setData({
-        ishow: false
-      })
-    }).catch(err=>{
-      this.setData({
-        ishow: false
-      })
 
+    }).catch(err=>{
+    
+
+    })
+    this.setData({
+      ishow: false
     })
   },
   gotoPayment(){

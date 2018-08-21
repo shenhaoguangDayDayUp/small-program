@@ -24,7 +24,8 @@
     "pages/set-rest-pass/set-rest-pass",
     "pages/message/message",
     "pages/message-detail/message",
-    "pages/address-list/address"
+    "pages/address-list/address",
+    "pages/game/game-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

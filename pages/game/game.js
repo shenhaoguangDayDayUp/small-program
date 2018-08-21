@@ -125,5 +125,11 @@ Page({
       this.setData({ recommond: res, firstLoading:false})
       
     })
+  },
+  gotoDetail(e){
+
+    var code = e.currentTarget.dataset.index.code;
+    var title = e.currentTarget.dataset.index.name
+    pageTo('../game/game-detail', { code: code, title: title},true)
   }
 })

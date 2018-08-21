@@ -32,7 +32,7 @@
 
        <view class='list-container'>
          <block wx:for='{{list}}' wx:key='{{index}}'>
-        <view class='game-item'>
+        <view class='game-item' data-index='{{item}}' catchtap='gotoDetail'>
             <view class='item'>
                <image-view height="200rpx" src='{{item.icon}}' ></image-view>
             </view>

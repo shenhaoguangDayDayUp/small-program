@@ -1,0 +1,30 @@
+<container loading="{{firstLoading}}">
+  <view class='game_container_top'>
+    <view class='game_container_top_img'>
+        <image-view width='200rpx' height="200rpx" url='{{detail.icon}}'></image-view>
+    </view>
+    <view class='game_container_top_right'>
+        <view class='game_container_top_right_title'>{{detail.description}}</view>
+        <view class='game_container_top_right_btn'>
+        <button class='game_container_top_start'>开始游戏</button>
+        </view>
+                
+    </view>
+
+  </view>
+
+    <view class='banner-containers'>
+    <swiper class='banner-container' autoplay='{{true}}' circular='{{true}}' duration='350' indicator-dots='{{bannerList.length > 1}}'>
+      <swiper-item class="banner-container" wx:for="{{bannerList}}" wx:key="{{index}}">
+        <image-view data-index='{{index}}' bindimgtap="onBannerImgTap" width="100%" height="438rpx"  src='{{item}}' />
+      </swiper-item>
+    </swiper>
+  </view>
+    <view>
+    <view class='title-bar' style='margin-top:20rpx'> 
+        <view class='bar'></view> 
+         <view class='title'>中奖榜单</view> 
+      </view>
+    </view>
+     
+</container>
