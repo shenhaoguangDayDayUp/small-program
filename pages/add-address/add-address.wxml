@@ -34,14 +34,14 @@
       </picker>
 
 
-      <view class="inputView" style='margin-top:20rpx'>
-        <view class='alert' wx:if='{{rule.street.show}}'>
+       <view class="inputView" style='margin-top:20rpx'>
+         <!-- <view class='alert' wx:if='{{rule.street.show}}'>
           <image class='tip' src='/images/img/tishi@2x.png'></image>
           <view class='tip-content'>{{rule.street.message}}</view>
-        </view>
-        <textarea class="areas" value='{{form.street}}' placeholder='街道' bindinput="streetInput" bindblur='streetBlur'> </textarea>
+        </view> -->
+        <textarea class="areas" value='{{form.street}}' placeholder='街道' bindinput="streetInput" bindblur='streetBlur'> </textarea> 
 
-      </view>
+      </view> 
       <view class='remenber'>
         <view class='auto-login'>
           <checkbox-group bindchange="serviceValChange">

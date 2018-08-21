@@ -5,6 +5,7 @@
 }
 .login-content{
   padding: 150rpx 80rpx 0 80rpx;
+    box-sizing: border-box;
   
 }
 .tip{
@@ -35,7 +36,8 @@ checkbox .wx-checkbox-input{
 
    width: 28rpx; /* 背景的宽 */
    height: 28rpx; /* 背景的高 */
-   background: transparent
+   background: transparent;
+     box-sizing: border-box;
 }
 checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   color: #ffcb16;
@@ -48,6 +50,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
   justify-content: space-between;
   height: 50rpx;
   font-size: 28rpx;
+    box-sizing: border-box;
 }
 .auto-login{
   display: flex;
@@ -119,6 +122,7 @@ color: white;
   margin-right: 6rpx;
   text-align: left;
    color: white; 
+     box-sizing: border-box;
 }
 .item--subtitle--tips {
   color: #777676; 
@@ -127,16 +131,21 @@ color: white;
   width: 40rpx;
   height: 40rpx;
   margin-right: 20rpx;
+  box-sizing: border-box;
 }
 
 .areas{
   height:152rpx;
   font-size: 32rpx;
   /* text-indent: 28rpx; */
-  border-bottom: 1rpx solid white;
+  border-bottom: 1rpx solid white; 
   /* padding-top: 30rpx; */
   margin: 0 auto;
   overflow: hidden;   
   position: relative; 
   color: white;
+  box-sizing: border-box;
+}
+textarea.areas{
+  width: 100% !important;
 }
